@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>Veri Gönderme Formu</title>
+</head>
 <body>
 
-<h2>Unity Veri Gönderme Formu</h2>
-
-<form action="/submit-data" method="POST">
-  Veri: <input type="text" name="userData">
-  <input type="submit" value="Gönder">
+<form action="http://localhost:3000/submit-data" method="POST">
+    <label for="userData">Kullanıcı Verisi:</label>
+    <input type="text" id="userData" name="userData" required>
+    <input type="submit" value="Gönder">
 </form>
 
 </body>
 </html>
+
